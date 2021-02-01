@@ -1,8 +1,17 @@
-function isValidPin(pin){
-  const pinToNum = pin * 1
-  console.log(pinToNum);
-  
-  
-}
+function checkNumsOnly(input)
+   {
+      let  numbers = /^[0-9]+$/;
+      if(input.match(numbers)&& input.length === 4)
+      {
+      console.log('Your Registration number has been accepted....');
+      return 
+      }
+      else
+      {
+      console.log('Pin should be numeric characters only and only 4 digits long');
+    //   return false;
+      }
+   } 
 
-isValidPin("12345")
+
+   checkNumsOnly("2815")
