@@ -6,3 +6,7 @@
    
    console.log(found);
    // expected output: Array ["T", "I"]
+
+   let num = 22
+
+   console.log( num.toString(2));

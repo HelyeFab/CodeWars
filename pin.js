@@ -15,3 +15,4 @@ function checkNumsOnly(input)
 
 
    checkNumsOnly("2815")
+
