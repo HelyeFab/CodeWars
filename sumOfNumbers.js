@@ -1,14 +1,19 @@
 function getSum(a, b) {
-  let counter = 1
-  let sum = 0
-  for (i = 0; i <=b; i++) {
-    counter++
-    
-    let index = counter
-    sum = index + counter
-    
-  }
-  return sum
+  const array = [];
+  array.push(...[a, b]);
+  let min = Math.min(...array);
+  let max = Math.max(...array);
+if(min === max){
+  return min
+
+} else {
+  let n = max - min + 1;
+  let sum = (n * (min + max)) / 2;
+  return sum;
+
 }
 
-console.log( getSum(1, 3));
+ 
+  
+}
+getSum(1, 6);
